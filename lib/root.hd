@@ -1,0 +1,5 @@
+# Root help directory for the UCSCLRIS packages.  This dummy package is
+# needed to have `ucsclris' appear as a module in some package, so that
+# the user can type "help ucsclris" (with `ucsclris' given as a task).
+
+_ucsclris	pkg = ucsclris$lib/rootucsclris.hd

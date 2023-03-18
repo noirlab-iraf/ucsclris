@@ -1,0 +1,8 @@
+# Root task entry for the UCSCLRIS package help tree.  Defines `ucsclris'
+# as both a task and a package in the ucsclris help database.
+
+ucsclris	men  = ucsclris$ucsclris.men,
+		hlp  = ucsclris$ucsclris.men,
+		sys  = ucsclris$ucsclris.hlp,
+		pkg  = ucsclris$ucsclris.hd,
+		src  = ucsclris$ucsclris.cl

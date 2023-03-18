@@ -1,0 +1,8 @@
+image,f,a,,,,"input image"
+out_image,f,a,,,,"output image"
+flatim,f,h,,,,"flatfield"
+l1,i,h,41,1,,"first line of bias section"
+l2,i,h,2008,1,,"last line of bias section"
+intscale,b,h,n,,,"scale and store as short integer?"
+side,s,h,,"blue|red",,"Side (red/blue)?"
+mode,s,h,"ql",,,

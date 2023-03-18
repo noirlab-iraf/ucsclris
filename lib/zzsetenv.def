@@ -1,0 +1,7 @@
+# Global environment definitions for the UCSCLRIS package.
+
+reset	ucsclrisbin	= "ucsclris$bin(arch)/"
+reset	pkgbin		= ucsclrisbin$
+reset	pkglibs		= ucsclris$lib/
+
+keep

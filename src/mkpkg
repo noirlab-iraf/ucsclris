@@ -1,0 +1,41 @@
+# Make the UCSCLRIS package.
+
+$call	relink
+$exit
+
+update:
+	$call	relink
+	$call	install
+	;
+
+relink:
+	$set	LIBS = "-lxtools -liminterp -lsurfit -lgsurfit -lcurfit"
+
+	$update	libpkg.a
+	$omake	x_ucsclris.x
+	$link	x_ucsclris.o libpkg.a $(LIBS) -o xx_ucsclris.e
+	;
+
+install:
+	$move	xx_ucsclris.e ucsclrisbin$x_ucsclris.e
+	;
+
+libpkg.a:
+	etc.x
+	futil.x		"futil.h"
+	lris_util.x	<math.h> "lris.h"
+	maskalign.x	<math.h> <gset.h> "futil.h"
+	xbox.x		<math.h> <gset.h> "futil.h"
+#	rot_center.x	<gset.h> "futil.h"
+	mboxfind.x	<imhdr.h> <gset.h>
+	simulator.x	<math.h> <gset.h> <gim.h> "lris.h"
+#	deimos_fake.x	<math.h> <gset.h> <gim.h>
+	mapmask.x	<math.h> <error.h> <mach.h> <math/gsurfit.h>
+	fabmask.x	<math.h>
+	gen_igi.x	<math.h>
+	mshift.x	<math.h> "lris.h"
+	l2process.x	<imhdr.h> <error.h>
+	l4process.x	<imhdr.h> <error.h>
+	support/salign.x	<math.h> <gset.h> "futil.h"
+	support/flex_fit.x	<math.h> <error.h>
+	;

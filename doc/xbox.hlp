@@ -1,0 +1,24 @@
+.help xbox 28oct97 ucsclris
+.ih
+NAME
+xbox -- Express solution for mask alignment using alignment boxes
+.ih
+USAGE
+xbox image_name box_coords
+.ih
+PARAMETERS
+.ih
+DESCRIPTION
+Please see ucsclris$doc/sma.txt for the cookbook.
+.ih
+EXAMPLES
+.ih
+TIME REQUIREMENTS
+.ih
+BUGS
+will not ask for confirmation before sending offsets to DCS if run in
+the "epar / :go" mode.
+.ih
+SEE ALSO
+Please see ucsclris$doc/sma.txt for the cookbook.
+.endhelp

@@ -1,0 +1,3 @@
+# UCSCLRIS package parameter file.
+version,s,h,"25jan99"
+#version,s,h,"07nov97" -- bool inconsistency fixed
