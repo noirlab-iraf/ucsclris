@@ -14,6 +14,9 @@ uparm
 spool
 spool.*
 _spool.*
+*BAK
+z
+zz
 
 # Object files
 *.o
